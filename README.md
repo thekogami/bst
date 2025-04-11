@@ -1,31 +1,39 @@
-// Marcela needs your help to write a computer program about binary search tree. The program must have the following commands:
+# Binary Search Tree (BST) Program
 
-// I n: Insert the n element in the current Binary Search Tree.
-// PREFIXA: print the pre-order traversal for the current tree
-// INFIXA: print the in-order traversal for the current tree
-// POSFIXA: print the post-order traversal for the current tree
-// P n: Search the n element, printing a message indicanding if n exist.
-// By using this program, at any time must be possible to insert a new element, print the Pre-order, In-order or Post-order traversal or search any element inside the tree.
-// Input
+Marcela precisa de ajuda para desenvolver um programa que trabalhe com uma Árvore Binária de Busca (Binary Search Tree - BST). O programa deve suportar os seguintes comandos:
 
-// The input contains N lines and each line contains an operation using letters (A-Z, a-z) over a binary search tree, that initially will be empty. The first line of input contains an insertion (I). The next lines can have any command described above, like the given example. The end of input is determined by EOF.
+### Comandos disponíveis
 
-// Obs: Consider that will not be repeated elements in the tree.
+- `I n`: Insere o elemento `n` na Árvore Binária de Busca atual.
+- `PREFIXA`: Imprime o percurso em pré-ordem da árvore.
+- `INFIXA`: Imprime o percurso em ordem da árvore.
+- `POSFIXA`: Imprime o percurso em pós-ordem da árvore.
+- `P n`: Busca pelo elemento `n`, imprimindo uma mensagem indicando se `n` existe.
 
-// Output
+A qualquer momento deve ser possível inserir um novo elemento, imprimir qualquer percurso (pré, em ou pós-ordem) ou buscar por um elemento existente na árvore.
 
-// Each line of the input excepting the lines with the "I" command must produce one output line. The output must be acording to the given example, remembering that "existe" means exist and "nao existe" means don't exist in portuguese. There is no blank space after the last line char, otherwise you`ll get Presentation Error.
+A entrada conterá `N` linhas, cada uma representando uma operação sobre a árvore (inicialmente vazia). A primeira linha sempre será uma inserção (`I`). As próximas linhas podem conter qualquer comando descrito acima. O fim da entrada é determinado por EOF.
 
-// | Sample Input | Sample Output        |
-// |--------------|----------------------|
-// | I c          | a c f h              |
-// | I f          | c a f h              |
-// | I a          | a h f c              |
-// | I h          | z nao existe         |
-// | INFIXA       | h existe             |
-// | PREFIXA      | a c f g h            |
-// | POSFIXA      |                      |
-// | P z          |                      |
-// | P h          |                      |
-// | I g          |                      |
-// | INFIXA       |                      |
+> **Observação**: Não haverá elementos repetidos na árvore.
+
+### Exemplo de Entrada e Saída
+
+| Entrada             | Saída                |
+|---------------------|----------------------|
+| I c                 |                      |
+| I f                 |                      |
+| I a                 |                      |
+| I h                 |                      |
+| INFIXA              | a c f h              |
+| PREFIXA             | c a f h              |
+| POSFIXA             | a h f c              |
+| P z                 | z nao existe         |
+| P h                 | h existe             |
+| I g                 |                      |
+| INFIXA              | a c f g h            |
+
+> ⚠️ **Importante**: Não deixe espaços em branco ao final das linhas de saída, ou ocorrerá erro de apresentação (_Presentation Error_).
+
+---
+
+✅ Projeto ideal para treinar manipulação de árvores binárias, recursão e percursos de árvore (pré, em, pós-ordem).
