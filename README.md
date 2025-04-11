@@ -1,39 +1,39 @@
 # Binary Search Tree (BST) Program
 
-Marcela precisa de ajuda para desenvolver um programa que trabalhe com uma Árvore Binária de Busca (Binary Search Tree - BST). O programa deve suportar os seguintes comandos:
+Marcela needs help developing a program that works with a Binary Search Tree (BST). The program must support the following commands:
 
-### Comandos disponíveis
+### Available Commands
 
-- `I n`: Insere o elemento `n` na Árvore Binária de Busca atual.
-- `PREFIXA`: Imprime o percurso em pré-ordem da árvore.
-- `INFIXA`: Imprime o percurso em ordem da árvore.
-- `POSFIXA`: Imprime o percurso em pós-ordem da árvore.
-- `P n`: Busca pelo elemento `n`, imprimindo uma mensagem indicando se `n` existe.
+- `I n`: Insert the element `n` into the current Binary Search Tree.
+- `PREFIXA`: Print the pre-order traversal of the tree.
+- `INFIXA`: Print the in-order traversal of the tree.
+- `POSFIXA`: Print the post-order traversal of the tree.
+- `P n`: Search for the element `n`, printing a message indicating whether `n` exists.
 
-A qualquer momento deve ser possível inserir um novo elemento, imprimir qualquer percurso (pré, em ou pós-ordem) ou buscar por um elemento existente na árvore.
+At any time, it should be possible to insert a new element, print any of the tree traversals (pre-order, in-order, post-order), or search for any element in the tree.
 
-A entrada conterá `N` linhas, cada uma representando uma operação sobre a árvore (inicialmente vazia). A primeira linha sempre será uma inserção (`I`). As próximas linhas podem conter qualquer comando descrito acima. O fim da entrada é determinado por EOF.
+The input will contain `N` lines, each representing an operation on the tree (which is initially empty). The first line will always be an insertion (`I`). The following lines can contain any of the commands listed above. Input ends with EOF.
 
-> **Observação**: Não haverá elementos repetidos na árvore.
+> **Note**: There will be no repeated elements in the tree.
 
-### Exemplo de Entrada e Saída
+### Example Input and Output
 
-| Entrada             | Saída                |
-|---------------------|----------------------|
-| I c                 |                      |
-| I f                 |                      |
-| I a                 |                      |
-| I h                 |                      |
-| INFIXA              | a c f h              |
-| PREFIXA             | c a f h              |
-| POSFIXA             | a h f c              |
-| P z                 | z nao existe         |
-| P h                 | h existe             |
-| I g                 |                      |
-| INFIXA              | a c f g h            |
+| Input               | Output                |
+|---------------------|-----------------------|
+| I c                 |                       |
+| I f                 |                       |
+| I a                 |                       |
+| I h                 |                       |
+| INFIXA              | a c f h               |
+| PREFIXA             | c a f h               |
+| POSFIXA             | a h f c               |
+| P z                 | z nao existe          |
+| P h                 | h existe              |
+| I g                 |                       |
+| INFIXA              | a c f g h             |
 
-> ⚠️ **Importante**: Não deixe espaços em branco ao final das linhas de saída, ou ocorrerá erro de apresentação (_Presentation Error_).
+> ⚠️ **Important**: Do not leave trailing spaces at the end of output lines, or you will get a _Presentation Error_.
 
 ---
 
-✅ Projeto ideal para treinar manipulação de árvores binárias, recursão e percursos de árvore (pré, em, pós-ordem).
+✅ This is a great project to practice working with binary trees, recursion, and different tree traversals (pre-order, in-order, post-order).
